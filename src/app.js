@@ -1,10 +1,12 @@
 'use strict'
 
-import { MainView } from "./views/main/main.js";
+import { FavoritesView } from "./components/favorites/favorites";
+import { MainView } from "./views/main/main";
 
 class App {
     routes = [
-        {path: "", view: MainView}
+        {path: "", view: MainView},
+        {path: "#favorites", view: FavoritesView},
     ];
     appState = {
         favorites: []
